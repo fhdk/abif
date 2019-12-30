@@ -1,3 +1,5 @@
+# Original work
+Carl Duff
 
 # Arch Base Installation Framework 2.x series
 A generic *offline* installer for Arch-based ISOs. Feel free to use it for your distribution.
