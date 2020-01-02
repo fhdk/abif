@@ -1,12 +1,15 @@
 # !/bin/bash
 #
 # Arch Base Installation Framework (version 2.2.3 - 26-Mar-2016)
-#
+# 
 # Written by Carl Duff for PacBang Linux
 #
 # This program is free software, provided under the GNU General Public License
 # as published by the Free Software Foundation. So feel free to copy, distribute,
 # or modify it as you wish.
+#
+# Last Change:
+# 2020-01-02: fh - replace geany with xed
 #
 
 ######################################################################
@@ -1925,7 +1928,7 @@ edit_configs() {
             ;;
      esac
      
-	[[ $FILE != "" ]] && geany -i $FILE \
+	[[ $FILE != "" ]] && xed -i $FILE \
 	|| dialog --backtitle "$VERSION - $SYSTEM ($ARCHI)" --title " $_ErrTitle " --msgbox "$_SeeConfErrBody" 0 0
 	
 	edit_configs
